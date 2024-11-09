@@ -1,10 +1,13 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    background: linear-gradient(135deg, #007acc, #00b3a6);
 }
 
+/* Header Styling */
 header {
     background-color: #007acc;
     color: white;
@@ -21,25 +24,76 @@ header p {
     margin: 5px 0;
 }
 
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #007acc;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 nav a {
     margin: 0 15px;
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ffdd57;
 }
 
-section {
+/* Section Card Styling */
+.section-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    border-bottom: 1px solid #ddd;
+    margin: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
-h2 {
-    color: #007acc;
+.section-card:nth-child(2) {
+    animation-delay: 0.5s;
 }
 
+.section-card:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffdd57;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* List Styling */
 ul {
     list-style-type: disc;
     padding-left: 20px;
