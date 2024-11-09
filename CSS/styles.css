@@ -24,11 +24,29 @@ header p {
     margin: 5px 0;
 }
 
-.profile-photo {
-    width: 100px;
-    height: 100px;
+.photo-container {
+    width: 170px;
+    height: 170px;
+    background-color: #007acc;
     border-radius: 50%;
-    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffdd57;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 nav {
