@@ -5,64 +5,86 @@ body {
     padding: 0;
     color: #333;
     background: linear-gradient(135deg, #007acc, #00b3a6);
+    scroll-behavior: smooth; /* Smooth scrolling for links */
 }
 
 /* Header Styling */
 header {
-    background-color: #007acc;
-    color: white;
+    background: linear-gradient(135deg, #007acc, #0066b3); /* Header gradient */
     padding: 20px;
     text-align: center;
 }
 
+/* Title and Subtitle */
 header h1 {
-    margin: 0;
+    margin-top: 15px;
     font-size: 2em;
+    color: white;
 }
 
 header p {
-    margin: 5px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
 }
 
-/* Photo Container - Circular Background */
+/* Profile Photo Container */
 .photo-container {
-    width: 170px; /* Container size slightly larger than the photo */
+    width: 170px;
     height: 170px;
-    background-color: #007acc; /* Optional background color */
-    border-radius: 50%; /* Makes the container circular */
+    background-color: #007acc;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto; /* Centers the container */
+    margin: 0 auto 10px; /* Centered with bottom margin */
 }
 
 /* Profile Photo Styling */
 .profile-photo {
-    width: 150px; /* Adjust to fit within the container */
+    width: 150px; /* Adjusted size */
     height: 150px;
-    border-radius: 50%; /* Makes the photo itself circular */
-    border: 5px solid #ffdd57; /* Adds a yellow border */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a soft shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+    border-radius: 50%;
+    border: 5px solid #ffdd57; /* Yellow border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
-/* Hover Effect for Profile Photo */
 .profile-photo:hover {
     transform: scale(1.1); /* Slightly zooms in the photo on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
 }
 
+/* Navigation Links */
 nav a {
     margin: 0 15px;
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: 1.1em; /* Increased font size */
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
 nav a:hover {
-    color: #ffdd57;
+    color: #ffdd57; /* Changes color on hover */
+    border-bottom: 2px solid #ffdd57; /* Adds an underline on hover */
 }
 
+/* Contact Button */
+.contact-button {
+    background-color: #ffdd57;
+    color: #007acc;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: #e6c24a;
+}
+
+/* Section Styling */
 section {
     padding: 20px;
     border-bottom: 1px solid #ddd;
@@ -70,4 +92,24 @@ section {
 
 h2 {
     color: #007acc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        font-size: 1em;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
 }
