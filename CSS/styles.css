@@ -84,6 +84,26 @@ nav a:hover {
     background-color: #e6c24a;
 }
 
+#about {
+    padding: 40px;
+    background-color: #f3f6f9; /* Light background color for contrast */
+    color: #333;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2em;
+    color: #007acc;
+    margin-bottom: 15px;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
 /* Section Styling */
 section {
     padding: 20px;
